@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/poppins-v20-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/poppins-v20-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/poppins-v20-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/poppins-v20-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/poppins-v20-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/poppins-v20-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/poppins-v20-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/poppins-v20-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/poppins-v20-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+a{
+    text-decoration: none;
+}
+.frm_content{
+    /* height: 700px; */
+    width: 1000px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px 100px;
+    gap: 50px;
+}
+.frm_img{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    justify-items: center;
+    align-content: center;
+}
+.frm_disc{
+    margin-top: 100px;
+}
+.frm_disc a{
+    letter-spacing: 1px;
+    color: #222222;
+    transition: 0.3s;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.frm_title{
+    margin-bottom: 50px;
+}
+.frm_title p{
+    font-size: 36px;
+    font-weight: 700;
+}
+.frm_input input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: #666 1px solid;
+    padding: 0px 20px 10px 50px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+input:focus{
+    border: none;
+    outline: none;
+    border-bottom: #666 1px solid;
+}
+input::placeholder{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #999;
+}
+.frm_name{
+    position: relative;
+}
+.frm_name i{
+    position: absolute;
+    font-size: 12px;
+    top: 12%;
+    left: 2%;
+}
+.fem_pass{
+    position: relative;
+}
+.fem_pass i{
+    position: absolute;
+    font-size: 12px;
+    top: 12%;
+    left: 2%;
+}
+.chk{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.chk input{
+    height: 15px;
+    width: 15px;
+    accent-color: var(--themecolor);
+}
+.chk label{
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: var(--txtcolor);
+    font-weight: 300;
+    transition: 0.2s;
+    color: #666;
+}
+.chk label a{
+    color: #666;
+    text-decoration: underline;
+}
+.frm_btn{
+    margin-bottom: 20px;
+}
+.frm_btn button{
+    border: none;
+    border-radius: 5px;
+    background-color: #4292DC;
+    &:hover{
+        background-color: #286196;
+    }
+}
+.frm_btn button a {
+    color: #4292DC;
+    font-size: 16px;
+    padding: 20px 45px;
+    display: block;
+    color: #fff;
+}
+.frm_opt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 110px;
+}
+.frm_social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frm_social_icon a {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.frm_social_icon a:nth-child(1){
+    background-color: #3B5998;
+}
+.frm_social_icon a:nth-child(2){
+    background-color: #1DA0F2;
+    margin: 0px 20px;
+}
+.frm_social_icon a:nth-child(3){
+    background-color: #E72734;
+}
